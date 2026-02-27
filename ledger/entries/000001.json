@@ -1,9 +1,8 @@
 {
   "entry_index": 1,
-  "previous_hash": "GENESIS_HASH_PLACEHOLDER",
+  "previous_hash": "b51f2462f167d4b25f7485ddefffdda108b0ac666f82965b36d90ea6f3569f9e",
   "entry_type": "SYSTEM_BOOTSTRAP",
   "payload_hash": "CSL_V0.1_SPEC_HASH_PLACEHOLDER",
   "timestamp": "2026-01-01T00:01:00Z",
-  "entry_hash": "TO_BE_COMPUTED",
   "notes": "Initial append-only entry anchoring CSL v0.1 specification state."
 }
