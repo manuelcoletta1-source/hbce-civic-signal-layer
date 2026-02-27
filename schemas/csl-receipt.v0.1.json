@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CSL Receipt Object v0.1",
+  "type": "object",
+  "required": [
+    "proposal_id",
+    "vote_hash",
+    "ledger_entry_index",
+    "ledger_entry_hash",
+    "timestamp",
+    "signature_validation",
+    "verifier_hash"
+  ],
+  "properties": {
+    "proposal_id": {
+      "type": "string",
+      "description": "Unique identifier of the proposal"
+    },
+    "vote_hash": {
+      "type": "string",
+      "description": "Deterministic hash of the signed vote object"
+    },
+    "ledger_entry_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Index of the ledger entry where the vote was recorded"
+    },
+    "ledger_entry_hash": {
+      "type": "string",
+      "description": "Hash of the append-only ledger entry"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when the vote was written to ledger"
+    },
+    "signature_validation": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "INVALID"
+      ],
+      "description": "Result of digital signature verification"
+    },
+    "verifier_hash": {
+      "type": "string",
+      "description": "Hash of the verifier logic version used for validation"
+    }
+  },
+  "additionalProperties": false
+}
