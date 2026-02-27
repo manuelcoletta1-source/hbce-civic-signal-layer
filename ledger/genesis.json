@@ -1,0 +1,12 @@
+{
+  "system": "HBCE Civic Signal Layer",
+  "version": "v0.1",
+  "mode": "CONSULTIVE",
+  "ledger_type": "APPEND_ONLY",
+  "hash_policy": "SHA-256",
+  "entry_index": 0,
+  "previous_hash": "0",
+  "timestamp": "2026-01-01T00:00:00Z",
+  "genesis_hash": "TO_BE_COMPUTED",
+  "notes": "Genesis block for CSL v0.1. Establishes deterministic starting point."
+}
